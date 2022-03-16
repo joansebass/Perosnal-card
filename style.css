@@ -1,0 +1,72 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+}
+
+.card {
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    width: 400px;
+    height: 600px;
+    background-color: whitesmoke;
+    border-radius: 20px ;
+    overflow: hidden;
+}
+
+.banner {
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    grid-column: 1/11;
+    grid-row: 1/4;
+}
+
+.profile-pic {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIcyPRHK085CAT4CpUPdYD528MJMIhm3PhLA&usqp=CAU);
+    border-radius: 50%;
+    grid-column: 4/8;
+    grid-row: 2/5;
+    border: 5px solid white;
+}
+
+.name {
+    grid-column: 4/8;
+    grid-row: 5/7;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: bold;
+    line-height: 35%;
+    color: #3f3f3f;
+}
+
+.info {
+    grid-column:2/10;
+    grid-row: 7/9;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.info p:nth-child(2) {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.follow {
+    background-color: #248856;
+    grid-column: 1/11;
+    grid-row: 10/11;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 0%;
+}
